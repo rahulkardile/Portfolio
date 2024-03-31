@@ -57,10 +57,8 @@ const Home = () => {
             <h1 className="flex gap-2 items-center font-bold text-black text-base sm:text-2xl bg-gradient-to-l select-none">
               Rahul Kardile{" "}
               <img
-                width={"25px"}
-                className="object-contain"
+                className="object-contain w-4 h-4 md:w-6 md:h-6"
                 draggable={false}
-                height={"25px"}
                 src={hand}
                 alt="hand"
               />
