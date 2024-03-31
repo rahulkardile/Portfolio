@@ -72,7 +72,7 @@ const Home = () => {
 
           <p className="mt-5 text-sm w-[80vw] sm:w-[550px]">
             {
-              "Hi, I'm Rahul Kardile. A passionate Full Stack Web Developer based in India, Maharashtra, Aurangabad 📌"
+              "Hi, I'm Rahul Kardile. A passionate Full Stack Web Developer based in Aurangabad, Maharashtra, India📌"
             }
           </p>
         </div>
