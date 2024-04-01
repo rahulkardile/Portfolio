@@ -8,7 +8,7 @@ const Header = () => {
       style={{
         backgroundColor: "rgb(237, 237, 237)"
       }}
-      className="sm:p-4 p-3 flex flex-row w-screen sm:w-full justify-between fixed top-0"
+      className="sm:p-4 p-3 pt-5 flex flex-row w-screen sm:w-full justify-between fixed top-0"
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       animate={{ opacity: 1 }}
