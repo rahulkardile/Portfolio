@@ -14,12 +14,17 @@ import ts from "../assets/ts.png";
 import git from "../assets/github.png";
 import aws from "../assets/aws.svg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div
+    <motion.div
       id="home"
       className="flex flex-col py-16 px-4 gap-14 sm:gap-24 w-screen landscape:items-center sm:max-w-[950px] m-auto pt-36"
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
     >
       <section className="flex items-center flex-row sm:w-[80vw] portrait:flex-col gap-8">
         <div className="portrait:hidden lg:block ">
@@ -169,7 +174,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

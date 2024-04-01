@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
+// import { useAnimate, motion, animate } from "framer-motion";
 
 const Header = () => {
   return (
@@ -53,7 +54,7 @@ const Header = () => {
           >
             Skills
           </Link>
-          <Link
+          <Link id=" "
             className="duration-200 ease-in-out hover:text-purple-600"
             onClick={() => {
               document
