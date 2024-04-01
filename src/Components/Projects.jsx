@@ -6,12 +6,17 @@ import pro1 from "../assets/pro1.png";
 import pro2 from "../assets/pro2.png";
 import pro3 from "../assets/pro3.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <section
+    <motion.section
       id="project"
       className="flex items-center w-[95vw] m-auto justify-center flex-col gap-14 pt-20"
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
     >
       <h1 className="text-3xl font-semibold font-poppins flex flex-col items-center gap-2">
         <h1>Portfolio</h1>{" "}
@@ -122,7 +127,7 @@ const Projects = () => {
         </div>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

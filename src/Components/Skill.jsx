@@ -1,9 +1,17 @@
 import React from "react";
 import { MdVerified } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Skill = () => {
   return (
-    <section id="skill" className="flex w-screen  items-center m-auto justify-center flex-col gap-14 py-40">
+    <motion.section
+      id="skill"
+      className="flex w-screen  items-center m-auto justify-center flex-col gap-14 py-40"
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
+    >
       {/* title */}
       <div className="flex justify-center items-center gap-1 flex-col">
         <h1 className="font-bold text-xl">My Skills</h1>
@@ -15,9 +23,7 @@ const Skill = () => {
         <section className="flex items-center gap-2 flex-col w-[300px] h-[220px] border border-black rounded-lg bg-gray-100">
           <h1 className="font-bold text-lg mt-3">Frontend Skills</h1>
           <div className="flex justify-between text-sm gap-11">
-
             <div className="flex items-start justify-evenly gap-5 flex-col">
-
               <div className="flex flex-col items-center">
                 <div className=" flex flex-row  items-center gap-2">
                   <MdVerified />
@@ -98,19 +104,17 @@ const Skill = () => {
                 </div>
                 <span className="text-xs font-thin ml-[20%]">Intermediate</span>
               </div>
-
             </div>
 
             <div className="flex items-start justify-evenly gap-5 flex-col">
-              
-            <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center justify-center">
                 <div className=" flex flex-row  items-center gap-2">
                   <MdVerified />
                   <h1 className="font-bold">MySQL</h1>
                 </div>
                 <span className="text-xs font-thin ml-[50%]">Intermediate</span>
               </div>
-              
+
               <div className="flex flex-col items-center justify-center">
                 <div className=" flex flex-col items-center">
                   <div className="flex flex-row items-center gap-2">
@@ -132,7 +136,7 @@ const Skill = () => {
           </div>
         </section>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

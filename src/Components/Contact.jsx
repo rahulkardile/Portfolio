@@ -2,15 +2,20 @@ import { useState } from "react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [name, setname] = useState("");
   const [message, setmessage] = useState("");
 
   return (
-    <section
+    <motion.section
       id="contact"
       className="flex flex-col items-center gap-3 m-auto w-[80vw] sm:w-[900px] pt-20 mb-44"
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
     >
       <h1 className="text-3xl font-semibold flex flex-col gap-2 items-center">
         <h1>Contact Me</h1>{" "}
@@ -83,7 +88,7 @@ const Contact = () => {
           </Link>
         </form>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

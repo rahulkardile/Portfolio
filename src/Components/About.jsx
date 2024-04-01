@@ -2,12 +2,17 @@ import { FaMedal } from "react-icons/fa";
 import { PiGraduationCapFill } from "react-icons/pi";
 import img from "../assets/about.jpg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section
+    <motion.section
       id="about"
       className="flex flex-col portrait:items-center gap-3 m-auto w-screen sm:w-[900px] pt-24"
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
     >
       <h1 className="text-3xl font-semibold flex flex-col gap-2 items-center">
         <h1 className="portrait:text-xl">About Me</h1>{" "}
@@ -67,7 +72,7 @@ const About = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

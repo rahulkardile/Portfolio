@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
-// import { useAnimate, motion, animate } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header
+    <motion.header
       style={{
         backgroundColor: "rgb(237, 237, 237)",
       }}
       className="sm:p-4 p-7 flex flex-row w-screen sm:w-full justify-between fixed top-0"
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
     >
       <h1
         id="dancing-script"
@@ -80,7 +84,7 @@ const Header = () => {
       <div className="lg:hidden ml-4 cursor-pointer sm:mr-5">
         <IoMenu className="sm:text-3xl text-lg" />
       </div>
-    </header>
+    </motion.header>
   );
 };
 
