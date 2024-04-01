@@ -12,7 +12,7 @@ const Header = () => {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
+      transition={{ duration: 3.5 }}
     >
       <h1
         id="dancing-script"

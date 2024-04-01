@@ -10,7 +10,7 @@ const Skill = () => {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
+      transition={{ duration: 3.5 }}
     >
       {/* title */}
       <div className="flex justify-center items-center gap-1 flex-col">

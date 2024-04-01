@@ -16,7 +16,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
+      transition={{ duration: 3.5 }}
     >
       <h1 className="text-3xl font-semibold font-poppins flex flex-col items-center gap-2">
         <h1>Portfolio</h1>{" "}
@@ -24,7 +24,12 @@ const Projects = () => {
       </h1>
 
       <div className=" sm:w-[780px] flex flex-col w-[100vw] items-center m-auto gap-10">
-        <div className="flex flex-col sm:flex-row items-center gap-6 sm:w-full">
+        <motion.div
+          className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
           <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
             <img
               className="w-[100%] rounded mt-5"
@@ -56,7 +61,7 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col sm:flex-row items-center gap-6 sm:w-full">
           <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
@@ -125,7 +130,6 @@ const Projects = () => {
             </div>
           </div>
         </div>
-
       </div>
     </motion.section>
   );

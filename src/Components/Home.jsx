@@ -24,7 +24,7 @@ const Home = () => {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
+      transition={{ duration: 3.5 }}
     >
       <section className="flex items-center flex-row sm:w-[80vw] portrait:flex-col gap-8">
         <div className="portrait:hidden lg:block ">
