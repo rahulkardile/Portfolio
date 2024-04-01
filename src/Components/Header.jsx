@@ -8,11 +8,7 @@ const Header = () => {
       style={{
         backgroundColor: "rgb(237, 237, 237)"
       }}
-      className="sm:p-4 p-3 pt-5 flex flex-row w-screen sm:w-full justify-between fixed top-0"
-      initial={{ opacity: 0 }}
-      exit={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 3.5 }}
+      className="sm:p-4 p-3 pt-5 flex flex-row z-50 w-screen sm:w-full justify-between fixed top-0"
     >
       <h1
         id="dancing-script"

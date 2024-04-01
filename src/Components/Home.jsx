@@ -20,10 +20,10 @@ const Home = () => {
   return (
     <motion.div
       id="home"
-      className="flex flex-col py-16 px-4 gap-14 sm:gap-24 w-screen landscape:items-center sm:max-w-[950px] m-auto pt-36"
+      className="flex flex-col py-16 px-4 gap-14 sm:gap-24 z-10 w-screen landscape:items-center sm:max-w-[950px] m-auto pt-36"
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: 2 }}
       transition={{ duration: 3.5 }}
     >
       <section className="flex items-center flex-row sm:w-[80vw] portrait:flex-col gap-8">
