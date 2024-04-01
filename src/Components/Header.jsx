@@ -6,9 +6,9 @@ const Header = () => {
   return (
     <motion.header
       style={{
-        backgroundColor: "rgb(237, 237, 237)",
+        backgroundColor: "rgb(237, 237, 237)"
       }}
-      className="sm:p-4 p-7 flex flex-row w-screen sm:w-full justify-between fixed top-0"
+      className="sm:p-4 p-3 flex flex-row w-screen sm:w-full justify-between fixed top-0"
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       animate={{ opacity: 1 }}
