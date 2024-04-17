@@ -27,7 +27,7 @@ const Home = () => {
           initial={{ opacity: 0, x: "-100vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, x: 0 }}
-          transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.4 }}
+          transition={{ type: "spring", duration: 2.5, delay: 1, bounce: 0.4 }}
           className="portrait:hidden lg:block "
         >
           <section className="flex flex-col gap-3">
@@ -57,7 +57,7 @@ const Home = () => {
           initial={{ opacity: 0, y: "100vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, y: 0 }}
-          transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.6 }}
+          transition={{ type: "spring", duration: 2.5, delay: 1, bounce: 0.6 }}
           src={mainIng}
           className="lg:w-[250px] sm:w-[220px] w-[150px] sm:hidden object-contain bg-red-200 rounded-lg"
           alt="img"
@@ -67,7 +67,7 @@ const Home = () => {
           initial={{ opacity: 0, x: "-100vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, x: 0 }}
-          transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.6 }}
+          transition={{ type: "spring", duration: 2.5, delay: 1, bounce: 0.6 }}
           className="sm:ml-10 portrait:m-auto self-center"
         >
           <div className="flex flex-col portrait:items-center items-start">
@@ -98,7 +98,7 @@ const Home = () => {
         initial={{ opacity: 0, x: "-100vh" }}
         exit={{ opacity: 0 }}
         animate={{ opacity: 2, x: 0 }}
-        transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.6 }}
+        transition={{ type: "spring", duration: 2.5, delay: 1, bounce: 0.6 }}
           src={mainIng}
           className="lg:w-[250px] sm:w-[220px] portrait:hidden sm:block w-[120px] object-contain bg-red-200 rounded-lg"
           alt="img"
@@ -109,7 +109,7 @@ const Home = () => {
         initial={{ opacity: 0, y: "100vh" }}
         exit={{ opacity: 0 }}
         animate={{ opacity: 2, y: 0 }}
-        transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.6 }}
+        transition={{ type: "spring", duration: 2.5, delay: 1, bounce: 0.6 }}
         className="flex flex-row sm:self-start items-center gap-3 select-none"
       >
         <h3 className="text-black font-semibold portrait:text-xs duration-500 ease-in-out hover:text-purple-600">
