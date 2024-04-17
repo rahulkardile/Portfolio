@@ -16,7 +16,7 @@ const About = () => {
     >
       <h1 className="text-3xl font-semibold flex flex-col gap-2 items-center">
         <h1 className="portrait:text-xl">About Me</h1>{" "}
-        <span className="text-xs font-light">Get To Know More</span>{" "}
+        <span className="text-xs font-normal">Get To Know More</span>{" "}
       </h1>
 
       <div className="mt-7 flex sm:flex-row flex-col items-center gap-16">

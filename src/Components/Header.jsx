@@ -6,8 +6,18 @@ const Header = () => {
   return (
     <motion.header
       style={{
-        backgroundColor: "rgb(237, 237, 237)"
+        backgroundColor: "rgb(237, 237, 237)",
       }}
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{
+        delay: 1,
+      }}
+
       className="sm:p-4 p-3 pt-5 flex flex-row z-50 w-screen sm:w-full justify-between fixed top-0"
     >
       <h1
@@ -17,13 +27,13 @@ const Header = () => {
             .getElementById("home")
             .scrollIntoView({ behavior: "smooth" });
         }}
-        className="sm:ml-4 ml-3 w-fit flex gap-3 text-xl sm:text-2xl cursor-pointer duration-500 ease-in-out hover:text-purple-600"
+        className="sm:ml-4 ml-3 w-fit flex gap-3 text-xl sm:text-2xl 2xl:ml-[4%] cursor-pointer xl:text-3xl duration-500 ease-in-out hover:text-purple-600"
       >
         Rahul <span className=""> Kardile</span>
       </h1>
 
-      <div className="lg:text-sm portrait:hidden sm:hidden lg:block  mr-5">
-        <section className="flex gap-3">
+      <div className="lg:text-sm portrait:hidden sm:hidden lg:block xl:mr-14 2xl:mr-[5%]  mr-5">
+        <section className="flex xl:gap-6 xl:text-base gap-3">
           <Link
             className="duration-200 ease-in-out hover:text-purple-600"
             onClick={() => {
@@ -54,7 +64,8 @@ const Header = () => {
           >
             Skills
           </Link>
-          <Link id=" "
+          <Link
+            id=" "
             className="duration-200 ease-in-out hover:text-purple-600"
             onClick={() => {
               document

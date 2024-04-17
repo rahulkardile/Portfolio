@@ -20,14 +20,16 @@ const Home = () => {
   return (
     <motion.div
       id="home"
-      className="flex flex-col py-16 px-4 gap-14 sm:gap-24 z-10 w-screen landscape:items-center sm:max-w-[950px] m-auto pt-36"
-      initial={{ opacity: 0 }}
-      exit={{ opacity: 0 }}
-      animate={{ opacity: 2 }}
-      transition={{ duration: 3.5 }}
+      className="flex flex-col py-16 px-4 gap-14 sm:gap-24 z-10 w-screen items-center sm:max-w-[950px] m-auto pt-36"
     >
-      <section className="flex items-center flex-row sm:w-[80vw] portrait:flex-col gap-8">
-        <div className="portrait:hidden lg:block ">
+      <motion.section className="flex items-center m-auto flex-row sm:w-[80vw] portrait:flex-col gap-8">
+        <motion.div
+          initial={{ opacity: 0, x: "-100vh" }}
+          exit={{ opacity: 0 }}
+          animate={{ opacity: 2, x: 0 }}
+          transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.4 }}
+          className="portrait:hidden lg:block "
+        >
           <section className="flex flex-col gap-3">
             <Link
               to={"https://www.linkedin.com/in/rahull-kardile/"}
@@ -49,15 +51,25 @@ const Home = () => {
               <FaInstagram className="duration-300 ease-in-out hover:text-purple-600" />
             </Link>
           </section>
-        </div>
+        </motion.div>
 
-        <img
+        <motion.img
+          initial={{ opacity: 0, y: "100vh" }}
+          exit={{ opacity: 0 }}
+          animate={{ opacity: 2, y: 0 }}
+          transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.6 }}
           src={mainIng}
           className="lg:w-[250px] sm:w-[220px] w-[150px] sm:hidden object-contain bg-red-200 rounded-lg"
           alt="img"
         />
 
-        <div className="sm:ml-10 portrait:m-auto self-center">
+        <motion.div
+          initial={{ opacity: 0, x: "-100vh" }}
+          exit={{ opacity: 0 }}
+          animate={{ opacity: 2, x: 0 }}
+          transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.6 }}
+          className="sm:ml-10 portrait:m-auto self-center"
+        >
           <div className="flex flex-col portrait:items-center items-start">
             <h1 className="flex gap-2 items-center font-bold text-black text-base sm:text-2xl bg-gradient-to-l select-none">
               Rahul Kardile{" "}
@@ -80,16 +92,26 @@ const Home = () => {
               "Hi, I'm Rahul Kardile. A passionate Full Stack Web Developer based in Aurangabad, Maharashtra, India📌"
             }
           </p>
-        </div>
+        </motion.div>
 
-        <img
+        <motion.img
+        initial={{ opacity: 0, x: "-100vh" }}
+        exit={{ opacity: 0 }}
+        animate={{ opacity: 2, x: 0 }}
+        transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.6 }}
           src={mainIng}
           className="lg:w-[250px] sm:w-[220px] portrait:hidden sm:block w-[120px] object-contain bg-red-200 rounded-lg"
           alt="img"
         />
-      </section>
+      </motion.section>
 
-      <div className="flex flex-row sm:self-start items-center gap-3 select-none">
+      <motion.div
+        initial={{ opacity: 0, y: "100vh" }}
+        exit={{ opacity: 0 }}
+        animate={{ opacity: 2, y: 0 }}
+        transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.6 }}
+        className="flex flex-row sm:self-start items-center gap-3 select-none"
+      >
         <h3 className="text-black font-semibold portrait:text-xs duration-500 ease-in-out hover:text-purple-600">
           Tech Stack
         </h3>
@@ -173,7 +195,7 @@ const Home = () => {
             alt="icon"
           />
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
