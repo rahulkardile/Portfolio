@@ -4,13 +4,17 @@ import About from "../Components/About";
 import Skill from "../Components/Skill";
 import Projects from "../Components/Projects";
 import Contact from "../Components/Contact";
-import Animate from "../Components/Animate";
+import { useScroll, motion } from "framer-motion";
 
 const Home = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
     <>
       <Header />
-      <section className="w-screen h-screen">
+      <section className="w-screen h-screen mb-8">
+        <motion.div id="progress" style={{ scaleX: scrollYProgress }} />
+
         <HomeC />
         <About />
         <Skill />

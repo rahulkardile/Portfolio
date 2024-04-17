@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const Header = () => {
+
+  const { scrollYProgress } = useScroll();
+
   return (
     <motion.header
       style={{
-        backgroundColor: "rgb(237, 237, 237)",
+        backgroundColor: "rgb(237, 237, 237)"
       }}
       initial={{
         opacity: 0,
@@ -91,6 +94,7 @@ const Header = () => {
       <div className="lg:hidden ml-4 cursor-pointer sm:mr-5">
         <IoMenu className="sm:text-3xl text-lg" />
       </div>
+      
     </motion.header>
   );
 };

@@ -18,6 +18,16 @@ body{
     font-style: normal;
   }
 
+  #progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--red);
+    transform-origin: 0%;
+  }
+
   /* body{
     overflow: hidden;
   } */
