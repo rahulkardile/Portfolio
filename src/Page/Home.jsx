@@ -14,7 +14,6 @@ const Home = () => {
       <Header />
       <section className="w-screen h-screen mb-8">
         <motion.div id="progress" style={{ scaleX: scrollYProgress }} />
-
         <HomeC />
         <About />
         <Skill />

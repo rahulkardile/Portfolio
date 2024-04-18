@@ -6,12 +6,15 @@ const Animate = () => {
     initial={{
         opacity: 0, x: '-100vh'
     }}
+    
     animate={{ opacity: 1, x: 0 }}
+
     transition={{ 
-        type: 'spring', bounce: 0.6,
+        type: 'spring', 
+        bounce: 0.6,
         duration: 2,
         delay: 1,
-        yoyo: Infinity 
+        yoyo: Infinity
     }}
 
     whileHover={{

@@ -9,15 +9,16 @@ const About = () => {
     <motion.section
       id="about"
       className="flex flex-col portrait:items-center gap-3 m-auto w-screen sm:w-[900px] pt-24"
-      initial={{ opacity: 0 }}
-      exit={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 3.5 }}
     >
-      <h1 className="text-3xl font-semibold flex flex-col gap-2 items-center">
+      <motion.h1 
+      initial={{ opacity: 0, y: "-20vh"  }}
+      exit={{ opacity: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 3.5, type: "spring", delay: 1, bounce: 0.4 }}
+      className="text-3xl font-semibold flex flex-col gap-2 items-center">
         <h1 className="portrait:text-xl">About Me</h1>{" "}
         <span className="text-xs font-normal">Get To Know More</span>{" "}
-      </h1>
+      </motion.h1>
 
       <div className="mt-7 flex sm:flex-row flex-col items-center gap-16">
         <img
