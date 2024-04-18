@@ -12,8 +12,8 @@ const Skill = () => {
         initial={{ opacity: 0, y: "10vh" }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.7 }}
-        transition={{ duration: 1.5 }}
-        className="flex justify-center items-center gap-1 flex-col"
+        transition={{ duration: 2.5 }}
+        className="flex justify-center items-center gap-1 flex-col overflow-hidden"
       >
         <h1 className="font-bold text-xl">My Skills</h1>
         <span className="text-xs">My Technical skills Level</span>

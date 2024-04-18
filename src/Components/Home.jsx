@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <motion.div
       id="home"
-      className="flex flex-col py-16 px-4 gap-14 sm:gap-24 z-10 w-screen items-center sm:max-w-[950px] m-auto pt-36"
+      className="flex flex-col py-16 px-4 gap-14 sm:gap-24 xl:mb-28 z-10 w-screen items-center sm:max-w-[950px] m-auto pt-36"
     >
       <motion.section className="flex items-center m-auto flex-row sm:w-[80vw] portrait:flex-col gap-8">
         <motion.div
