@@ -14,7 +14,7 @@ const About = () => {
       <motion.h1
         initial={{ opacity: 0, y: "-10vh" }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, type: "spring", bounce: 0.4 }}
+        transition={{ duration: 2.5, type: "spring", bounce: 0.4 }}
         viewport={{ once: true, amount: 0.8 }}
         className="text-3xl font-semibold flex flex-col gap-2 items-center"
       >
@@ -28,7 +28,7 @@ const About = () => {
         }}
 
         transition={{
-          duration: 1.2,
+          duration: 2.2,
           bounce: 0.3
         }}
 
