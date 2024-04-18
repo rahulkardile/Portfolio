@@ -5,22 +5,55 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const About = () => {
+  const cardVariants = {
+    offscreen: {
+      y: 300,
+    },
+    onscreen: {
+      y: 50,
+      rotate: -10,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
     <motion.section
       id="about"
       className="flex flex-col portrait:items-center gap-3 m-auto w-screen sm:w-[900px] pt-24"
     >
-      <motion.h1 
-      initial={{ opacity: 0, y: "-20vh"  }}
-      exit={{ opacity: 0 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 3.5, type: "spring", delay: 1, bounce: 0.4 }}
-      className="text-3xl font-semibold flex flex-col gap-2 items-center">
+      <motion.h1
+        initial={{ opacity: 0, y: "-10vh" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, type: "spring", bounce: 0.4 }}
+        viewport={{ once: false, amount: 0.8 }}
+        className="text-3xl font-semibold flex flex-col gap-2 items-center"
+      >
         <h1 className="portrait:text-xl">About Me</h1>{" "}
         <span className="text-xs font-normal">Get To Know More</span>{" "}
       </motion.h1>
 
-      <div className="mt-7 flex sm:flex-row flex-col items-center gap-16">
+      <motion.div
+        initial={{
+          opacity: 0, y: "-5vh"
+        }}
+
+        transition={{
+          duration: 1.2,
+          bounce: 0.3
+        }}
+
+        whileInView={{
+          opacity: 1, 
+          y: 0
+        }}
+
+        viewport={{ once: false, amount: 0.8 }}
+        className="mt-7 flex sm:flex-row flex-col items-center gap-16"
+      >
         <img
           className="w-[250px] h-[250px] portrait:w-[190px] portrait:h-[190px] rounded-lg"
           src={img}
@@ -29,7 +62,6 @@ const About = () => {
         <div className="sm:w-[50%] portrait:w-[80vw] flex flex-col gap-4 portrait:m-auto justify-center items-start">
           <div className="w-[450px]  portrait:w-[78vw] mx-4">
             <div className="flex flex-row justify-between items-center mb-2 text-xl">
-
               <h1 className="sm:w-[200px] portrait:w-[180px] flex flex-col justify-center h-28 items-center gap-1 border-[1px] border-slate-400 rounded-2xl bg-white">
                 <PiGraduationCapFill className="font-extrabold duration-200 ease-in-out hover:text-purple-600" />
                 <span className="font-semibold portrait:text-sm duration-200 ease-in-out hover:text-purple-600">
@@ -39,7 +71,7 @@ const About = () => {
                   bachelor of computer application
                 </span>
               </h1>
-              
+
               <h1 className="w-[200px] portrait:w-[180px] flex flex-col justify-center h-28 items-center gap-1 mx-2 border-[1px] border-slate-400 rounded-2xl bg-white">
                 <FaMedal className="font-extrabold  duration-200 ease-in-out hover:text-purple-600" />
                 <span className="font-semibold  duration-200 ease-in-out portrait:text-sm hover:text-purple-600">
@@ -72,7 +104,7 @@ const About = () => {
             Download CV
           </Link>
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   );
 };
