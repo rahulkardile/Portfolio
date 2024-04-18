@@ -5,20 +5,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const cardVariants = {
-    offscreen: {
-      y: 300,
-    },
-    onscreen: {
-      y: 50,
-      rotate: -10,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 0.8,
-      },
-    },
-  };
 
   return (
     <motion.section
@@ -29,7 +15,7 @@ const About = () => {
         initial={{ opacity: 0, y: "-10vh" }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, type: "spring", bounce: 0.4 }}
-        viewport={{ once: false, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.8 }}
         className="text-3xl font-semibold flex flex-col gap-2 items-center"
       >
         <h1 className="portrait:text-xl">About Me</h1>{" "}
@@ -51,7 +37,7 @@ const About = () => {
           y: 0
         }}
 
-        viewport={{ once: false, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.8 }}
         className="mt-7 flex sm:flex-row flex-col items-center gap-16"
       >
         <img
