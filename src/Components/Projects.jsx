@@ -10,34 +10,49 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <motion.section
+    <section
       id="project"
       className="flex items-center w-[95vw] m-auto justify-center flex-col gap-14 pt-20"
-      initial={{ opacity: 0 }}
-      exit={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 3.5 }}
     >
-      <h1 className="text-3xl font-semibold font-poppins flex flex-col items-center gap-2">
+      <motion.h1
+        initial={{ opacity: 0, y: "10vh" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.7 }}
+        transition={{ duration: 1.5 }}
+        className="text-3xl font-semibold font-poppins flex flex-col items-center gap-2"
+      >
         <h1>Portfolio</h1>{" "}
         <span className="text-xs font-light">Browse My Recent Projects</span>
-      </h1>
+      </motion.h1>
 
       <div className=" sm:w-[780px] flex flex-col w-[100vw] items-center m-auto gap-10">
         <motion.div
           className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, y: "10vh" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.7 }}
+          transition={{ duration: 1.5, bounce: 0.7 }}
         >
-          <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
+          <motion.div
+            initial={{ opacity: 0, y: "10vh" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{ duration: 1.5, bounce: 0.7 }}
+            className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto"
+          >
             <img
               className="w-[100%] rounded mt-5"
               src={pro1}
               alt="project 1 img"
             />
-          </div>
-          <div className="sm:w-[450px] text-center max-w-xs flex flex-col gap-2">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: "10vh" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{ duration: 1.5, bounce: 0.7 }}
+            className="sm:w-[450px] text-center max-w-xs flex flex-col gap-2"
+          >
             <h1 className="text-2xl font-semibold">Wix Booking Service</h1>
             <p className="text-sm">
               Wix Estate is a full stack website which contains nodejs as a
@@ -60,10 +75,16 @@ const Projects = () => {
                 <LuArrowUpRightSquare />
               </Link>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
 
-        <div className="flex flex-col sm:flex-row items-center gap-6 sm:w-full">
+        <motion.div
+          className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
+          initial={{ opacity: 0, y: "10vh" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.7 }}
+          transition={{ duration: 1.5, bounce: 0.7 }}
+        >
           <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
             <img
               className="w-[100%] rounded mt-5"
@@ -95,9 +116,15 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col sm:flex-row items-center gap-6 sm:w-full">
+        <motion.div
+          className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
+          initial={{ opacity: 0, y: "10vh" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.7 }}
+          transition={{ duration: 1.5, bounce: 0.7 }}
+        >
           <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
             <img
               className="w-[100%] rounded mt-5"
@@ -129,9 +156,9 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

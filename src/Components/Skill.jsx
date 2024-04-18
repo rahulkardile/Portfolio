@@ -1,4 +1,3 @@
-import React from "react";
 import { MdVerified } from "react-icons/md";
 import { motion } from "framer-motion";
 
@@ -7,20 +6,31 @@ const Skill = () => {
     <motion.section
       id="skill"
       className="flex w-screen  items-center m-auto justify-center flex-col gap-14 py-40"
-      initial={{ opacity: 0 }}
-      exit={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 3.5 }}
     >
       {/* title */}
-      <div className="flex justify-center items-center gap-1 flex-col">
+      <motion.div
+        initial={{ opacity: 0, y: "10vh" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.7 }}
+        transition={{ duration: 1.5 }}
+        className="flex justify-center items-center gap-1 flex-col"
+      >
         <h1 className="font-bold text-xl">My Skills</h1>
         <span className="text-xs">My Technical skills Level</span>
-      </div>
+      </motion.div>
       {/* main containt */}
 
       <div className="flex flex-row portrait:flex-col justify-evenly portrait:w-[75vw] gap-5 sm:gap-14">
-        <section className="flex items-center gap-2 flex-col w-[300px] h-[220px] border border-black rounded-lg bg-gray-100">
+        <motion.section
+          initial={{ opacity: 0, x: "-20vh" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{
+            once: true,
+            amount: 0.5,
+          }}
+          transition={{ duration: 1.5, bounce: 0.5 }}
+          className="flex items-center gap-2 flex-col w-[300px] h-[220px] border border-black rounded-lg bg-gray-100"
+        >
           <h1 className="font-bold text-lg mt-3">Frontend Skills</h1>
           <div className="flex justify-between text-sm gap-11">
             <div className="flex items-start justify-evenly gap-5 flex-col">
@@ -75,9 +85,18 @@ const Skill = () => {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section className="flex items-center gap-2 flex-col w-[300px] h-[220px] border border-black rounded-lg bg-gray-100">
+        <motion.section
+          initial={{ opacity: 0, x: "20vh" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{
+            once: true,
+            amount: 0.5,
+          }}
+          transition={{ duration: 1.5, bounce: 0.5 }}
+          className="flex items-center gap-2 flex-col w-[300px] h-[220px] border border-black rounded-lg bg-gray-100"
+        >
           <h1 className="font-bold text-lg mt-3">Backend Skills</h1>
           <div className="flex justify-between text-sm gap-11">
             <div className="flex items-start justify-evenly gap-5 flex-col">
@@ -134,7 +153,7 @@ const Skill = () => {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
       </div>
     </motion.section>
   );
