@@ -108,7 +108,7 @@ const Projects = () => {
                 <FaGithub />
               </Link>
               <Link
-                to={"https://estaste-mern.onrender.com/"}
+                to={"https://story-in.vercel.app/"}
                 className="duration-300 ease-in-out text-xl hover:text-purple-600"
                 target="_blank"
               >
