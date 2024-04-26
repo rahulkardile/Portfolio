@@ -22,8 +22,8 @@ const Skill = () => {
 
       <div className="flex flex-row portrait:flex-col justify-evenly portrait:w-[75vw] gap-5 sm:gap-14">
         <motion.section
-          initial={{ opacity: 0, x: "-20vh" }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: "20vh" }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{
             once: true,
             amount: 0.5,
@@ -88,8 +88,8 @@ const Skill = () => {
         </motion.section>
 
         <motion.section
-          initial={{ opacity: 0, x: "20vh" }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: "20vh" }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{
             once: true,
             amount: 0.5,
