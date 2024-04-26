@@ -24,7 +24,7 @@ const Home = () => {
     >
       <motion.section className="flex items-center m-auto flex-row sm:w-[80vw] portrait:flex-col gap-8">
         <motion.div
-          initial={{ opacity: 0, x: "-30vh" }}
+          initial={{ opacity: 0, x: "-7vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, x: 0 }}
           transition={{ type: "spring", duration: 2.5, delay: 1}}
@@ -54,7 +54,7 @@ const Home = () => {
         </motion.div>
 
         <motion.img
-          initial={{ opacity: 0, y: "30vh" }}
+          initial={{ opacity: 0, y: "10vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, y: 0 }}
           transition={{ type: "spring", duration: 2.5, delay: 1,  }}
@@ -64,7 +64,7 @@ const Home = () => {
         />
 
         <motion.div
-          initial={{ opacity: 0, x: "-30vh" }}
+          initial={{ opacity: 0, x: "-10vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, x: 0 }}
           transition={{ type: "spring", duration: 2.5, delay: 1,}}
@@ -95,7 +95,7 @@ const Home = () => {
         </motion.div>
 
         <motion.img
-          initial={{ opacity: 0, x: "-30vh" }}
+          initial={{ opacity: 0, x: "-10vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, x: 0 }}
           transition={{ type: "spring", duration: 2.5, delay: 1 }}
@@ -106,7 +106,7 @@ const Home = () => {
       </motion.section>
 
       <motion.div
-        initial={{ opacity: 0, y: "20vh" }}
+        initial={{ opacity: 0, y: "7vh" }}
         exit={{ opacity: 0 }}
         animate={{ opacity: 2, y: 0 }}
         transition={{ type: "spring", duration: 2.5, delay: 1, bounce: 0.2 }}
