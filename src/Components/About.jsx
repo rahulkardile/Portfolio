@@ -12,7 +12,7 @@ const About = () => {
       className="flex flex-col portrait:items-center gap-3 m-auto w-screen sm:w-[900px] pt-24"
     >
       <motion.h1
-        initial={{ opacity: 0, y: "-10vh" }}
+        initial={{ opacity: 0, y: "10vh" }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2.5, type: "spring", bounce: 0.4 }}
         viewport={{ once: true, amount: 0.8 }}
