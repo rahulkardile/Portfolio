@@ -1,4 +1,3 @@
-import React from "react";
 import { LuArrowUpRightSquare } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 
@@ -108,7 +107,7 @@ const Projects = () => {
                 <FaGithub />
               </Link>
               <Link
-                to={"https://story-in.vercel.app/"}
+                to={"https://storyin-client.onrender.com/"}
                 className="duration-300 ease-in-out text-xl hover:text-purple-600"
                 target="_blank"
               >
