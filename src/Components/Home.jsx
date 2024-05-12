@@ -59,7 +59,7 @@ const Home = () => {
           animate={{ opacity: 2, y: 0 }}
           transition={{ type: "spring", duration: 2.5, delay: 1,  }}
           src={mainIng}
-          className="lg:w-[250px] sm:w-[220px] w-[150px] sm:hidden object-contain bg-red-200 rounded-lg"
+          className="lg:w-[250px] sm:w-[220px] w-[150px] md:hidden object-contain bg-red-200 rounded-lg"
           alt="img"
         />
 

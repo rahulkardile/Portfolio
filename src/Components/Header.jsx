@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { motion, useScroll } from "framer-motion";
+import { useState } from "react";
 
 const Header = () => {
-
   const { scrollYProgress } = useScroll();
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <motion.header
       style={{
-        backgroundColor: "rgb(237, 237, 237)"
+        backgroundColor: "rgb(237, 237, 237)",
       }}
       initial={{
         opacity: 0,
@@ -20,7 +21,6 @@ const Header = () => {
       transition={{
         delay: 1,
       }}
-
       className="sm:p-4 p-3 pt-5 flex flex-row z-50 w-screen sm:w-full justify-between fixed top-0"
     >
       <h1
@@ -92,9 +92,89 @@ const Header = () => {
       </div>
 
       <div className="lg:hidden ml-4 cursor-pointer sm:mr-5">
-        <IoMenu className="sm:text-3xl text-lg" />
+        <IoMenu
+          className="sm:text-3xl text-lg"
+          onClick={() => setOpen(!isOpen)}
+        />
+
+        <nav
+          className={`bg-white p-4 mr-5 absolute left-0 pt-4 top-0 w-screen h-screen ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          } ease-in-out duration-500`}
+          
+        >
+          <div className="flex flex-row justify-between mx-2">
+            <h1
+              id="dancing-script"
+              className="sm:ml-4 ml-3 w-fit flex gap-3 text-xl sm:text-2xl 2xl:ml-[4%] cursor-pointer xl:text-3xl duration-500 ease-in-out hover:text-purple-600"
+            >
+              Rahul <span className=""> Kardile</span>
+            </h1>
+            <IoMenu
+              className="sm:text-3xl text-lg"
+              onClick={() => setOpen(!isOpen)}
+            />
+          </div>
+          <ul className="flex flex-col gap-4 mt-4 ml-5">
+            <Link
+              className="duration-200 ease-in-out hover:text-purple-600"
+              onClick={() => {
+                document
+                  .getElementById("home")
+                  .scrollIntoView({ behavior: "smooth" });
+                setOpen(false);
+              }}
+            >
+              Home
+            </Link>
+            <Link
+              className="duration-200 ease-in-out hover:text-purple-600"
+              onClick={() => {
+                document
+                  .getElementById("about")
+                  .scrollIntoView({ behavior: "smooth" });
+                setOpen(false);
+              }}
+            >
+              About
+            </Link>
+            <Link
+              className="duration-200 ease-in-out hover:text-purple-600"
+              onClick={() => {
+                document
+                  .getElementById("skill")
+                  .scrollIntoView({ behavior: "smooth" });
+                setOpen(false);
+              }}
+            >
+              Skills
+            </Link>
+            <Link
+              id=" "
+              className="duration-200 ease-in-out hover:text-purple-600"
+              onClick={() => {
+                document
+                  .getElementById("project")
+                  .scrollIntoView({ behavior: "smooth" });
+                setOpen(false);
+              }}
+            >
+              Portfolio
+            </Link>
+            <Link
+              className="duration-200 ease-in-out hover:text-purple-600"
+              onClick={() => {
+                document
+                  .getElementById("contact")
+                  .scrollIntoView({ behavior: "smooth" });
+                setOpen(false);
+              }}
+            >
+              Contact
+            </Link>
+          </ul>
+        </nav>
       </div>
-      
     </motion.header>
   );
 };
