@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { RiCloseCircleFill } from "react-icons/ri";
 
 const Header = () => {
-  const { scrollYProgress } = useScroll();
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -94,14 +93,14 @@ const Header = () => {
 
       <div className="lg:hidden ml-4 cursor-pointer sm:mr-5">
         {
-          isOpen ? <RiCloseCircleFill  className="text-2xl sm:text-3xl text-gray-700" onClick={() => setOpen(!isOpen)} /> : <IoMenu
+          isOpen ? <RiCloseCircleFill  className="text-2xl sm:text3 text-gray-700" onClick={() => setOpen(!isOpen)} /> : <IoMenu
           className="sm:text-3xl text-2xl"
           onClick={() => setOpen(!isOpen)}
         />
         }
 
         <nav
-          className={`bg-white p-4 mr-5 absolute left-0 pt-4 top-0 w-[50%] sm:w-[30%] h-screen ${
+          className={`bg-white p-4 mr-5 absolute left-0 pt-4 top-0 w-[50%] sm:w-[30%] h-[110vh] ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } ease-in-out duration-500`}
         >
