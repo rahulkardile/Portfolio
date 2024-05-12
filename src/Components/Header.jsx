@@ -94,14 +94,14 @@ const Header = () => {
 
       <div className="lg:hidden ml-4 cursor-pointer sm:mr-5">
         {
-          isOpen ? <RiCloseCircleFill  className="text-2xl text-gray-700" onClick={() => setOpen(!isOpen)} /> : <IoMenu
-          className="sm:text-3xl text-lg"
+          isOpen ? <RiCloseCircleFill  className="text-2xl sm:text-3xl text-gray-700" onClick={() => setOpen(!isOpen)} /> : <IoMenu
+          className="sm:text-3xl text-2xl"
           onClick={() => setOpen(!isOpen)}
         />
         }
 
         <nav
-          className={`bg-white p-4 mr-5 absolute left-0 pt-4 top-0 w-[50%] h-screen ${
+          className={`bg-white p-4 mr-5 absolute left-0 pt-4 top-0 w-[50%] sm:w-[30%] h-screen ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } ease-in-out duration-500`}
         >
@@ -161,6 +161,14 @@ const Header = () => {
               }}
             >
               Contact
+            </Link>
+            <Link
+              className="duration-200 ease-in-out hover:text-purple-600"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              Close
             </Link>
           </ul>
         </nav>

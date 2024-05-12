@@ -25,6 +25,45 @@ const Projects = () => {
       </motion.h1>
 
       <div className=" sm:w-[780px] flex flex-col w-[100vw] items-center m-auto gap-10">
+     
+      <motion.div
+          className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
+          initial={{ opacity: 0, y: "10vh" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.7 }}
+          transition={{ duration: 1.5, bounce: 0.7 }}
+        >
+          <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
+            <img
+              className="w-[100%] rounded mt-5"
+              src={pro2}
+              alt="project 1 img"
+            />
+          </div>
+          <div className="sm:w-[450px] text-center max-w-xs flex flex-col gap-2">
+            <h1 className="text-2xl font-semibold">StoryIn</h1>
+            <p className="text-sm">
+            StoryIn is an audiobook streaming platform, similar to Kuku FM, where users can listen to audiobooks. This platform also supports the Razorpay payment gateway, allowing users to subscribe for monthly or yearly access.
+            </p>
+            <div className="flex flex-row gap-3 justify-center mt-2">
+              <Link
+                to={"https://github.com/rahulkardile/StoryIn"}
+                className="duration-300 ease-in-out text-xl hover:text-purple-600"
+                target="_blank"
+              >
+                <FaGithub />
+              </Link>
+              <Link
+                to={"https://storyin-client.onrender.com/"}
+                className="duration-300 ease-in-out text-xl hover:text-purple-600"
+                target="_blank"
+              >
+                <LuArrowUpRightSquare />
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+     
         <motion.div
           className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
           initial={{ opacity: 0, y: "10vh" }}
@@ -45,6 +84,7 @@ const Projects = () => {
               alt="project 1 img"
             />
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: "10vh" }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -54,9 +94,7 @@ const Projects = () => {
           >
             <h1 className="text-2xl font-semibold">Wix Booking Service</h1>
             <p className="text-sm">
-              Wix Estate is a full stack website which contains nodejs as a
-              back-end and reactjs as a frontend with full functionality of crud
-              and file handling with advance authentication.
+            Wix Estate is a full-stack website built with Node.js on the backend and React.js on the frontend. It offers full CRUD functionality, file handling, and advanced authentication.
             </p>
             <div className="flex flex-row gap-3 justify-center mt-2">
               <Link
@@ -87,46 +125,6 @@ const Projects = () => {
           <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
             <img
               className="w-[100%] rounded mt-5"
-              src={pro2}
-              alt="project 1 img"
-            />
-          </div>
-          <div className="sm:w-[450px] text-center max-w-xs flex flex-col gap-2">
-            <h1 className="text-2xl font-semibold">StoryIn</h1>
-            <p className="text-sm">
-              StoryIn is a audiobook platform like kuku fm where users can
-              listen audiobook by paying money through rayzorpay payment getway.
-              this website is build using mern stack and firebase.
-            </p>
-            <div className="flex flex-row gap-3 justify-center mt-2">
-              <Link
-                to={"https://github.com/rahulkardile/StoryIn"}
-                className="duration-300 ease-in-out text-xl hover:text-purple-600"
-                target="_blank"
-              >
-                <FaGithub />
-              </Link>
-              <Link
-                to={"https://storyin-client.onrender.com/"}
-                className="duration-300 ease-in-out text-xl hover:text-purple-600"
-                target="_blank"
-              >
-                <LuArrowUpRightSquare />
-              </Link>
-            </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
-          initial={{ opacity: 0, y: "10vh" }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.7 }}
-          transition={{ duration: 1.5, bounce: 0.7 }}
-        >
-          <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
-            <img
-              className="w-[100%] rounded mt-5"
               src={pro3}
               alt="project 1 img"
             />
@@ -134,9 +132,7 @@ const Projects = () => {
           <div className="sm:w-[450px] text-center max-w-xs flex flex-col gap-2">
             <h1 className="text-2xl font-semibold">Nike Clone</h1>
             <p className="text-sm">
-              Nike Clone is a full stack website which contains nodejs as a
-              back-end and reactjs as a frontend with full functionality of crud
-              and file handling with advance authentication.
+            Nike Clone is a full-stack website built with Node.js on the backend and React.js on the frontend. It provides full CRUD functionality, file handling, and advanced authentication.
             </p>
             <div className="flex flex-row gap-3 justify-center mt-2">
               <Link
