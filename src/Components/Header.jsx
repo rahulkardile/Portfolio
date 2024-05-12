@@ -94,21 +94,18 @@ const Header = () => {
 
       <div className="lg:hidden ml-4 cursor-pointer sm:mr-5">
         {
-          isOpen ? <RiCloseCircleFill  className="sm:text-4xl text-lg" onClick={() => setOpen(!isOpen)} /> : <IoMenu
+          isOpen ? <RiCloseCircleFill  className="text-2xl text-gray-700" onClick={() => setOpen(!isOpen)} /> : <IoMenu
           className="sm:text-3xl text-lg"
           onClick={() => setOpen(!isOpen)}
         />
         }
-        
-
-        
 
         <nav
           className={`bg-white p-4 mr-5 absolute left-0 pt-4 top-0 w-[50%] h-screen ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } ease-in-out duration-500`}
         >
-          <ul className="flex flex-col gap-4 mt-4 ml-5">
+          <ul className="flex pt-8 flex-col gap-8 mt-4 ml-5">
             <Link
               className="duration-200 ease-in-out hover:text-purple-600"
               onClick={() => {
