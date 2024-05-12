@@ -93,7 +93,8 @@ const Header = () => {
 
       <div className="lg:hidden ml-4 cursor-pointer sm:mr-5">
         {
-          isOpen ? <RiCloseCircleFill  className="text-2xl sm:text3 text-gray-700" onClick={() => setOpen(!isOpen)} /> : <IoMenu
+          isOpen ? <RiCloseCircleFill  className="text-2xl sm:text3 text-gray-700" onClick={() => setOpen(!isOpen)} />
+          : <IoMenu
           className="sm:text-3xl text-2xl"
           onClick={() => setOpen(!isOpen)}
         />
