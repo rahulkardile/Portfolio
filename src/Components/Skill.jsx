@@ -81,7 +81,7 @@ const Skill = () => {
                   <MdVerified />
                   <h1 className="font-bold">NextJs</h1>
                 </div>
-                <span className="text-xs font-thin">Advance</span>
+                <span className="text-xs font-thin">Basic</span>
               </div>
             </div>
           </div>
