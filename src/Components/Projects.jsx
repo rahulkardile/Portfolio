@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import pro1 from "../assets/pro1.png";
 import pro2 from "../assets/pro2.png";
 import pro3 from "../assets/pro3.png";
+import pro4 from "../assets/pro4.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -125,7 +126,7 @@ const Projects = () => {
           <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
             <img
               className="w-[100%] rounded mt-5"
-              src={pro3}
+              src={pro4}
               alt="project 1 img"
             />
           </div>
