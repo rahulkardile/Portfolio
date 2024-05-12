@@ -130,6 +130,44 @@ const Projects = () => {
             />
           </div>
           <div className="sm:w-[450px] text-center max-w-xs flex flex-col gap-2">
+            <h1 className="text-2xl font-semibold">Keeper Clone</h1>
+            <p className="text-sm">
+            Keeper Clone: A responsive note-taking app built with React, Tailwind CSS for styling, Redux for state management, and React Router for navigation. Explore the code to see this tech stack in action!
+            </p>
+            <div className="flex flex-row gap-3 justify-center mt-2">
+              <Link
+                to={"https://github.com/rahulkardile/QuadB-Assignment"}
+                className="duration-300 ease-in-out text-xl hover:text-purple-600"
+                target="_blank"
+              >
+                <FaGithub />
+              </Link>
+              <Link
+                to={"https://quad-seven.vercel.app/"}
+                className="duration-300 ease-in-out text-xl hover:text-purple-600"
+                target="_blank"
+              >
+                <LuArrowUpRightSquare />
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
+          initial={{ opacity: 0, y: "10vh" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.7 }}
+          transition={{ duration: 1.5, bounce: 0.7 }}
+        >
+          <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
+            <img
+              className="w-[100%] rounded mt-5"
+              src={pro3}
+              alt="project 1 img"
+            />
+          </div>
+          <div className="sm:w-[450px] text-center max-w-xs flex flex-col gap-2">
             <h1 className="text-2xl font-semibold">Nike Clone</h1>
             <p className="text-sm">
             Nike Clone is a full-stack website built with Node.js on the backend and React.js on the frontend. It provides full CRUD functionality, file handling, and advanced authentication.
