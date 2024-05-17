@@ -101,11 +101,14 @@ const Header = () => {
         }
 
         <nav
-          className={`bg-white p-4 mr-5 absolute left-0 pt-4 top-0 w-[50%] sm:w-[30%] h-[110vh] ${
+          className={`bg-white p-4 mr-5 absolute left-0 pt-4 top-0 w-[100%] h-[110vh] ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } ease-in-out duration-500`}
         >
           <ul className="flex pt-8 flex-col gap-8 mt-4 ml-5">
+
+          <RiCloseCircleFill  className="text-2xl sm:text3 fixed top-7 right-3 text-gray-700" onClick={() => setOpen(!isOpen)} />
+
             <Link
               className="duration-200 ease-in-out hover:text-purple-600"
               onClick={() => {
