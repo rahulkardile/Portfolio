@@ -110,7 +110,7 @@ const Home = () => {
         exit={{ opacity: 0 }}
         animate={{ opacity: 2, y: 0 }}
         transition={{ type: "spring", duration: 2.5, delay: 1, bounce: 0.2 }}
-        className="flex flex-row sm:self-start items-center gap-3 select-none"
+        className="flex flex-row sm:self-start items-center gap-2 sm:gap-3 select-none"
       >
         <h3 className="text-black font-semibold portrait:text-xs duration-500 ease-in-out hover:text-purple-600">
           Tech Stack
