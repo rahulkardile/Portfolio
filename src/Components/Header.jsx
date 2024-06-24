@@ -92,13 +92,17 @@ const Header = () => {
       </div>
 
       <div className="lg:hidden ml-4 cursor-pointer sm:mr-5">
-        {
-          isOpen ? <RiCloseCircleFill  className="text-2xl sm:text3 text-gray-700" onClick={() => setOpen(!isOpen)} />
-          : <IoMenu
-          className="sm:text-3xl text-2xl"
-          onClick={() => setOpen(!isOpen)}
-        />
-        }
+        {isOpen ? (
+          <RiCloseCircleFill
+            className="text-2xl sm:text3 text-gray-700"
+            onClick={() => setOpen(!isOpen)}
+          />
+        ) : (
+          <IoMenu
+            className="sm:text-3xl text-2xl"
+            onClick={() => setOpen(!isOpen)}
+          />
+        )}
 
         <nav
           className={`bg-white p-4 mr-5 absolute left-0 pt-4 top-0 w-[100%] h-[110vh] ${
@@ -106,8 +110,10 @@ const Header = () => {
           } ease-in-out duration-500`}
         >
           <ul className="flex pt-8 flex-col gap-8 mt-4 ml-5">
-
-          <RiCloseCircleFill  className="text-2xl sm:text3 fixed top-7 right-3 text-gray-700" onClick={() => setOpen(!isOpen)} />
+            <RiCloseCircleFill
+              className="text-2xl sm:text3 fixed top-7 right-3 text-gray-700"
+              onClick={() => setOpen(!isOpen)}
+            />
 
             <Link
               className="duration-200 ease-in-out hover:text-purple-600"
