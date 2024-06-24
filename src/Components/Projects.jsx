@@ -227,15 +227,15 @@ const Projects = () => {
             </p>
             <div className="flex flex-row gap-3 justify-center mt-2">
               <Link
-                to={"https://github.com/rahulkardile/StoryIn"}
+                to={"https://github.com/rahulkardile/Ecommerce"}
                 className="duration-300 ease-in-out text-xl hover:text-purple-600"
                 target="_blank"
               >
                 <FaGithub />
               </Link>
               <Link
-                to={"https://estaste-mern.onrender.com/"}
-                className="duration-300 ease-in-out text-xl hover:text-purple-600"
+                to={""}
+                className="duration-300 cursor-not-allowed ease-in-out text-xl hover:text-purple-600"
                 target="_blank"
               >
                 <LuArrowUpRightSquare />
