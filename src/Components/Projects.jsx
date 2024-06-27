@@ -75,6 +75,61 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.7 }}
           transition={{ duration: 1.5, bounce: 0.7 }}
         >
+          <motion.div
+            initial={{ opacity: 0, y: "10vh" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{ duration: 1.5, bounce: 0.7 }}
+            className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto"
+          >
+            <img
+              className="w-[100%] rounded mt-5"
+              src={pro1}
+              alt="project 1 img"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: "10vh" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{ duration: 1.5, bounce: 0.7 }}
+            className="sm:w-[450px] text-start max-w-xs flex flex-col gap-2"
+          >
+            <h1 className="text-2xl font-semibold">Wix Booking Service</h1>
+            <p className="text-sm">
+              Wix Estate is a full-stack website built with Node.js on the
+              backend and React.js on the frontend. It offers complete CRUD
+              functionality, file handling, and advanced authentication. The
+              backend and frontend are hosted on AWS Lambda functions, which
+              help reduce costs.
+            </p>
+            <div className="flex flex-row gap-3 justify-center mt-2">
+              <Link
+                to={"https://github.com/rahulkardile/Estate01"}
+                className="duration-300 ease-in-out text-xl hover:text-purple-600"
+                target="_blank"
+              >
+                <FaGithub />
+              </Link>
+              <Link
+                to={"https://jlwixd8st8.execute-api.us-east-1.amazonaws.com/"}
+                className="duration-300 ease-in-out text-xl hover:text-purple-600"
+                target="_blank"
+              >
+                <LuArrowUpRightSquare />
+              </Link>
+            </div>
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
+          initial={{ opacity: 0, y: "10vh" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.7 }}
+          transition={{ duration: 1.5, bounce: 0.7 }}
+        >
           <div className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto">
             <img
               className="w-[100%] rounded mt-5"
@@ -108,59 +163,6 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </motion.div>
-
-        <motion.div
-          className="flex flex-col sm:flex-row items-center gap-6 sm:w-full"
-          initial={{ opacity: 0, y: "10vh" }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.7 }}
-          transition={{ duration: 1.5, bounce: 0.7 }}
-        >
-          <motion.div
-            initial={{ opacity: 0, y: "10vh" }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.7 }}
-            transition={{ duration: 1.5, bounce: 0.7 }}
-            className="w-[75%] px-3 bg-slate-500 rounded-lg h-auto"
-          >
-            <img
-              className="w-[100%] rounded mt-5"
-              src={pro1}
-              alt="project 1 img"
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: "10vh" }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.7 }}
-            transition={{ duration: 1.5, bounce: 0.7 }}
-            className="sm:w-[450px] text-start max-w-xs flex flex-col gap-2"
-          >
-            <h1 className="text-2xl font-semibold">Wix Booking Service</h1>
-            <p className="text-sm">
-              Wix Estate is a full-stack website built with Node.js on the
-              backend and React.js on the frontend. It offers full CRUD
-              functionality, file handling, and advanced authentication.
-            </p>
-            <div className="flex flex-row gap-3 justify-center mt-2">
-              <Link
-                to={"https://github.com/rahulkardile/Estate01"}
-                className="duration-300 ease-in-out text-xl hover:text-purple-600"
-                target="_blank"
-              >
-                <FaGithub />
-              </Link>
-              <Link
-                to={"https://estaste-mern.onrender.com/"}
-                className="duration-300 ease-in-out text-xl hover:text-purple-600"
-                target="_blank"
-              >
-                <LuArrowUpRightSquare />
-              </Link>
-            </div>
-          </motion.div>
         </motion.div>
 
         <motion.div
