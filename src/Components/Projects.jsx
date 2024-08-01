@@ -44,10 +44,7 @@ const Projects = () => {
           <div className="sm:w-[450px] text-start max-w-xs flex flex-col gap-2">
             <h1 className="text-2xl font-semibold">StoryIn</h1>
             <p className="text-sm">
-              StoryIn is an audiobook streaming platform, similar to Kuku FM,
-              where users can listen to audiobooks. This platform also supports
-              the Razorpay payment gateway, allowing users to subscribe for
-              monthly or yearly access.
+            StoryIn is an audiobook streaming platform, similar to Kuku FM, where users can listen to audiobooks. This platform also supports the Razorpay payment gateway, allowing users to subscribe for monthly or yearly access. The frontend utilizes React with TypeScript, Redux, and Tailwind CSS, while the backend is built with Express.js, bcrypt, AWS S3 for audio file storage with presigned URLs, JWT authentication, Firebase authentication, and MongoDB.
             </p>
             <div className="flex flex-row gap-3 justify-center mt-2">
               <Link
@@ -58,7 +55,7 @@ const Projects = () => {
                 <FaGithub />
               </Link>
               <Link
-                to={"https://storyin-client.onrender.com/"}
+                to={"https://storyin.onrender.com"}
                 className="duration-300 ease-in-out text-xl hover:text-purple-600"
                 target="_blank"
               >
