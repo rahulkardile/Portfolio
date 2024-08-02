@@ -3,6 +3,7 @@ import { PiGraduationCapFill } from "react-icons/pi";
 import img from "../assets/about.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import resume from "../assets/Rahul Resume.pdf"
 
 const About = () => {
 
@@ -83,7 +84,7 @@ const About = () => {
 
           <Link
             download={true}
-            to={"/Resume.pdf"}
+            to={resume}
             target="_blank"
             className="p-4 bg-gray-900 text-white rounded-md font-bold self-center duration-300 ease-in-out hover:bg-slate-600"
           >
