@@ -106,7 +106,7 @@ const Home = () => {
         </h3>
         <p className="h-4 w-[1px] border border-black" />
 
-        <div className="flex flex-row items-center gap-3">
+        <div className="flex flex-row flex-wrap items-center gap-3">
           {images.map((item, index) => (
             <img
               key={index}
