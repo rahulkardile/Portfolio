@@ -16,19 +16,25 @@ import redisIcon from "../assets/redis_icon.png";
 import kafka from "../assets/kafka.svg";
 import docker from "../assets/docker.png";
 import nginx from "../assets/nginx-1.svg";
+import pSql from "../assets/postgresSQL.png";
+import prisma from "../assets/prisma.png";
+import java from "../assets/java.png";
 
 const images = [
     { name: "htmlPic", src: htmlPic },
     { name: "css", src: css },
     { name: "js", src: js },
+    { name: "js", src: java },
     { name: "react", src: react },
     { name: "tailwind", src: tailwind },
     { name: "node", src: node },
     { name: "express", src: express },
     { name: "mongo", src: mongo },
+    { name: "postgresSql", src: pSql },
     { name: "next", src: next },
     { name: "ts", src: ts },
     { name: "git", src: git },
+    { name: "prisma", src: prisma },
     { name: "redisIcon", src: redisIcon },
     { name: "kafka", src: kafka },
     { name: "docker", src: docker },

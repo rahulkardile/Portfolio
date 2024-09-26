@@ -1,18 +1,6 @@
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import hand from "../assets/Emojis.png";
 import mainIng from "../assets/Main.jpg";
-import js from "../assets/js.png";
-import htmlPic from "../assets/html.png";
-import css from "../assets/css.png";
-import tailwind from "../assets/tailwind.png";
-import node from "../assets/node.png";
-import react from "../assets/react.png";
-import express from "../assets/express.png";
-import mongo from "../assets/mongo.png";
-import next from "../assets/nextjs.svg";
-import ts from "../assets/ts.png";
-import git from "../assets/github.png";
-import aws from "../assets/aws.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import images from "../utils/SkillImages";
@@ -123,7 +111,7 @@ const Home = () => {
             <img
               key={index}
               draggable={false}
-              className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
+              className="w-[10px] h-auto sm:w-[30px] sm:h-auto"
               src={item.src}
               alt={item.name}
             />
@@ -135,76 +123,3 @@ const Home = () => {
 };
 
 export default Home;
-
-/*
-  <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={css}
-            alt="icon"
-          />
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={js}
-            alt="icon"
-          />
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={tailwind}
-            alt="icon"
-          />
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={node}
-            alt="icon"
-          />
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={express}
-            alt="icon"
-          />
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={react}
-            alt="icon"
-          />
-
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={mongo}
-            alt="icon"
-          />
-
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={next}
-            alt="icon"
-          />
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={ts}
-            alt="icon"
-          />
-
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={git}
-            alt="icon"
-          />
-
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={aws}
-            alt="icon"
-          />
-*/
