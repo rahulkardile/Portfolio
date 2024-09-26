@@ -15,6 +15,7 @@ import git from "../assets/github.png";
 import aws from "../assets/aws.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import images from "../utils/SkillImages";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
           initial={{ opacity: 0, x: "-7vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, x: 0 }}
-          transition={{ type: "spring", duration: 2.5, delay: 1}}
+          transition={{ type: "spring", duration: 2.5, delay: 1 }}
           className="portrait:hidden lg:block "
         >
           <section className="flex flex-col gap-3">
@@ -57,7 +58,7 @@ const Home = () => {
           initial={{ opacity: 0, y: "10vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, y: 0 }}
-          transition={{ type: "spring", duration: 2.5, delay: 1,  }}
+          transition={{ type: "spring", duration: 2.5, delay: 1 }}
           src={mainIng}
           className="lg:w-[250px] sm:w-[220px] w-[150px] md:hidden object-contain bg-red-200 rounded-lg"
           alt="img"
@@ -67,7 +68,7 @@ const Home = () => {
           initial={{ opacity: 0, x: "-10vh" }}
           exit={{ opacity: 0 }}
           animate={{ opacity: 2, x: 0 }}
-          transition={{ type: "spring", duration: 2.5, delay: 1,}}
+          transition={{ type: "spring", duration: 2.5, delay: 1 }}
           className="sm:ml-10 portrait:m-auto self-center"
         >
           <div className="flex flex-col portrait:items-center items-start">
@@ -118,13 +119,25 @@ const Home = () => {
         <p className="h-4 w-[1px] border border-black" />
 
         <div className="flex flex-row items-center gap-3">
-          <img
-            draggable={false}
-            className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
-            src={htmlPic}
-            alt="icon"
-          />
-          <img
+          {images.map((item, index) => (
+            <img
+              key={index}
+              draggable={false}
+              className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
+              src={item.src}
+              alt={item.name}
+            />
+          ))}
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+};
+
+export default Home;
+
+/*
+  <img
             draggable={false}
             className="w-[10px] h-[10px] sm:w-[30px] sm:h-[30px]"
             src={css}
@@ -194,11 +207,4 @@ const Home = () => {
             src={aws}
             alt="icon"
           />
-        </div>
-      </motion.div>
-
-    </motion.div>
-  );
-};
-
-export default Home;
+*/
