@@ -29,7 +29,7 @@ const Home = () => {
             <Link to={"https://github.com/rahulkardile"} target="_blank">
               <FaGithub className="duration-300 ease-in-out hover:text-purple-600" />
             </Link>
-            <Link to={"https://twitter.com/RahulKardile11"} target="_blank">
+            <Link to={"https://x.com/rahul_kardile77"} target="_blank">
               <FaTwitter className="duration-300 ease-in-out hover:text-purple-600" />
             </Link>
             <Link
